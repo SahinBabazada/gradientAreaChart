@@ -1,0 +1,17 @@
+{
+		"version": "1.0.0.1",
+		"author": {"name":"Shahin","email":"babazadasahin@gmail.com"},
+		"resources": [
+			{
+				"resourceId": "rId0",
+				"sourceType": 5,
+				"file": "resources/gradientAreaChartE82BC697A7A04152A88B9F2CA177A7A4.pbiviz.json"
+			}
+		],
+		"visual": {"name":"gradientAreaChart","displayName":"GradientAreaChart","guid":"gradientAreaChartE82BC697A7A04152A88B9F2CA177A7A4","visualClassName":"Visual","version":"1.0.0.1","description":"Gradient Area Chart for one measure","supportUrl":"https://github.com/SahinBabazada","gitHubUrl":"https://github.com/SahinBabazada"},
+		"metadata": {
+			"pbivizjson": {
+				"resourceId": "rId0"
+			}
+		}
+	}

@@ -1,0 +1,200 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Category Data",
+            "name": "category",
+            "kind": "Grouping",
+            "description": "Defines the categorical data used on the x-axis"
+        },
+        {
+            "displayName": "Measure Data",
+            "name": "measure",
+            "kind": "Measure",
+            "description": "Defines the numerical data used for the y-axis"
+        }
+    ],
+    "objects": {
+        "yAxisSettings": {
+            "displayName": "Y Axis",
+            "description": "Settings related to the Y Axis",
+            "properties": {
+                "minRange": {
+                    "displayName": "Minimum Range",
+                    "description": "Sets the minimum value for the y-axis",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "maxRange": {
+                    "displayName": "Maximum Range",
+                    "description": "Sets the maximum value for the y-axis",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "yAxisDisplayUnits": {
+                    "type": {
+                        "enumeration": [
+                            {
+                                "value": "Auto"
+                            },
+                            {
+                                "value": "Thousands"
+                            },
+                            {
+                                "value": "Millions"
+                            },
+                            {
+                                "value": "Billions"
+                            },
+                            {
+                                "value": "Trillions"
+                            }
+                        ]
+                    }
+                },
+                "yAxisDecimalPlaces": {
+                    "displayName": "Y Axis Decimal Places",
+                    "description": "Controls the number of decimal places for the Y axis",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "showYAxis": {
+                    "displayName": "Show Y Axis",
+                    "description": "Toggle to show or hide the Y axis",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "yAxisFontSize": {
+                    "displayName": "Y Axis Font Size",
+                    "description": "Font size for Y axis labels",
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        },
+        "generalSettings": {
+            "displayName": "General Settings",
+            "description": "Settings related to the data point andcolors",
+            "properties": {
+                "defaultColor": {
+                    "displayName": "Default Color",
+                    "description": "Default color for data points",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "gradientStartColor": {
+                    "displayName": "Gradient Start Color",
+                    "description": "Color for Start",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "gradientEndColor": {
+                    "displayName": "Gradient End Color",
+                    "description": "Color for End",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "showAllDataPoints": {
+                    "displayName": "Show All Data Points",
+                    "description": "Toggle to show or hide all data points on the chart",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fontSize": {
+                    "displayName": "Font Size",
+                    "description": "Font size for labels",
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                },
+                "smoothLine": {
+                    "displayName": "Smooth Line",
+                    "description": "Toggle between smooth and straight line for the area chart",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "showMarkers": {
+                    "displayName": "Show Markers",
+                    "description": "Toggle to show or hide markers on the data points",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "markerSize": {
+                    "displayName": "Marker Size",
+                    "description": "Size of the markers for data points",
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        },
+        "xAxisSettings": {
+            "displayName": "X Axis",
+            "description": "Settings related to the X Axis",
+            "properties": {
+                "showXAxis": {
+                    "displayName": "Show X Axis",
+                    "description": "Toggle to show or hide the X axis",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "xAxisFontSize": {
+                    "displayName": "X Axis Font Size",
+                    "description": "Font size for X axis labels",
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "category"
+                    },
+                    "dataReductionAlgorithm": {
+                        "top": {}
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "measure"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "privileges": []
+}

@@ -1,0 +1,26 @@
+{
+    "visual": {
+        "name": "gradientAreaChart",
+        "displayName": "GradientAreaChart",
+        "guid": "gradientAreaChartE82BC697A7A04152A88B9F2CA177A7A4",
+        "visualClassName": "Visual",
+        "version": "1.0.0.1",
+        "description": "Gradient Area Chart for one measure",
+        "supportUrl": "https://github.com/SahinBabazada",
+        "gitHubUrl": "https://github.com/SahinBabazada"
+    },
+    "apiVersion": "5.3.0",
+    "author": {
+        "name": "Shahin",
+        "email": "babazadasahin@gmail.com"
+    },
+    "assets": {
+        "icon": "assets/icon.png"
+    },
+    "externalJS": null,
+    "style": "style/visual.less",
+    "capabilities": "capabilities.json",
+    "dependencies": null,
+    "stringResources": [],
+    "version": "1.0.0.0"
+}
